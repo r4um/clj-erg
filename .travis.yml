@@ -5,7 +5,7 @@ before_install:
   - sudo apt-get -y install golang
   - go get -v github.com/xaviershay/grange-server
 before_script:
-  - $GOPATH/bin/grange-server 
+  - $GOPATH/bin/grange-server &
 env:
   global:
     - GOPATH=$HOME/go
