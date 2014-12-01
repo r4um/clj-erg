@@ -1,4 +1,4 @@
-# clj-erg ![build status](https://travis-ci.org/r4um/clj-erg.svg)
+# clj-erg [![Build Status](https://travis-ci.org/r4um/clj-erg.svg)](https://travis-ci.org/r4um/clj-erg)
 
 Clojure [grange](https://github.com/xaviershay/grange-server) client library.
 
