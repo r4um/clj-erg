@@ -4,7 +4,7 @@ Clojure [grange](https://github.com/xaviershay/grange-server) client library.
 
 ## Leiningen
 
-!["Leiningen version"](https://clojars.org/erg/latest-version.svg)
+[![leiningen version](http://clojars.org/erg/latest-version.svg)](http://clojars.org/erg)
 
 ## Usage
 
