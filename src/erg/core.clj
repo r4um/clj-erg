@@ -5,8 +5,11 @@
 
 (defn range_url
   "Build range URL"
-  [server port range]
-  (str "http://" server ":" port "/range/list?"
+  [server port range ssl?]
+  (str (if ssl? "https://" "http://")
+       server ":"
+       port
+       "/range/list?"
        (URLEncoder/encode range "UTF-8")))
 
 (defn remove-empty-string
@@ -16,11 +19,11 @@
 
 (defn expand
   "Expand range"
-  [range & {:keys [range-server range-port conn-timeout sock-timeout]
-                       :or {range-server "range" range-port "8080"
-                            conn-timeout 30000 sock-timeout 30000}}]
-  (-> (range_url range-server range-port range)
-      (http/get {:conn-timeout conn-timeout :socket-timeout sock-timeout})
+  [range & {:keys [range-server range-port ssl?]
+            :or {range-server "range" range-port "8080" ssl? false}
+            :as r}]
+  (-> (range_url range-server range-port range ssl?)
+      (http/get r)
       (:body)
       (clojure.string/split-lines)
       (remove-empty-string)

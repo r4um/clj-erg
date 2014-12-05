@@ -1,4 +1,4 @@
-(defproject erg "0.1.0"
+(defproject erg "0.2.0"
   :description "Clojure grange client library"
   :url "https://github.com/r4um/clj-erg"
   :license {:name "Eclipse Public License"
@@ -6,4 +6,4 @@
   :dependencies [[clj-http "1.0.1"]
                  [org.clojure/clojure "1.6.0"]]
   :scm {:name "git"
-        :url "https://github.com/r4um/clj-erg"})
+        :url "https://github.com/r4um/clj-erg.git"})
