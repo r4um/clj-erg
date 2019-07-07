@@ -1,6 +1,6 @@
 # clj-erg [![Build Status](https://travis-ci.org/r4um/clj-erg.svg)](https://travis-ci.org/r4um/clj-erg)
 
-Clojure [grange](https://github.com/xaviershay/grange-server) client library.
+Clojure [grange](https://github.com/square/grange-server) client library.
 
 ## Leiningen
 
