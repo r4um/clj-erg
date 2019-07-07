@@ -4,6 +4,7 @@ Clojure [grange](https://github.com/xaviershay/grange-server) client library.
 
 ## Leiningen
 
+[![Dependencies Status](https://versions.deps.co/r4um/clj-erg/status.svg)](https://versions.deps.co/r4um/clj-erg)
 [![leiningen version](http://clojars.org/erg/latest-version.svg)](http://clojars.org/erg)
 
 ## Usage
@@ -17,7 +18,7 @@ user=> (e/expand "test1..3" :range-server "127.0.0.1")
 
 ## License
 
-Copyright © 2014 Pranay Kanwar
+Copyright © Pranay Kanwar
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
