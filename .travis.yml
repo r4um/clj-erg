@@ -3,7 +3,7 @@ lein: lein2
 before_install:
   - sudo apt-get update
   - sudo apt-get -y install golang
-  - go get -v github.com/xaviershay/grange-server
+  - go get -v github.com/square/grange-server
 before_script:
   - $GOPATH/bin/grange-server &
 env:
